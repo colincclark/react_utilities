@@ -9,8 +9,10 @@ function App() {
   return (
     <>
       <NavBar />
-      <h1>React Components & Hooks Library</h1>
-      <VirtualizedList items={items} />
+      <main>
+        <h1>React Components & Hooks Library</h1>
+        <VirtualizedList items={items} />
+      </main>
     </>
   );
 }
