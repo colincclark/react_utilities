@@ -1,27 +1,16 @@
-import { useState } from "react";
-
 import NavBar from "./NavBar";
 
 import "./App.css";
+import VirtualizedList from "./components/VirtualisedList";
+
+const items = Array.from({ length: 1000 }, (_, i) => `Item ${i + 1}`);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <NavBar />
       <h1>React Components & Hooks Library</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <VirtualizedList items={items} />
     </>
   );
 }
