@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 
+import VirtualizedList from "components/VirtualisedList";
 import "./App.css";
-import VirtualizedList from "./components/VirtualisedList";
 
 const items = Array.from({ length: 1000 }, (_, i) => `Item ${i + 1}`);
 
